@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import "reset.css";
+
+
+body {
+   
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 600px;
+    height: 100vh;
+    background-color: rgb(29, 28, 29);
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.nav {
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(78, 77, 76);
+    font-size: 20px;
+    background-color: rgb(240, 243, 243);
+}
+.menu {
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(83, 83, 82);
+    font-size: 20px;
+    background-color: rgb(233, 236, 236);
+}
+
+.title {
+    position: absolute;
+    top:50px;
+    width: 500px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(221, 230, 247);
+    text-decoration: none;
+    
+}
+.explain {
+    position: absolute;
+    top:120px;
+    width: 500px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(202, 195, 221);
+   
+}
+
+.explain__two{
+    position: absolute;
+    top:140px;
+    width: 500px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(218, 207, 250);
+
+}
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg) scale(1);
+        color: darkred;
+        
+        
+    }
+    25% {
+        transform: rotateZ(90deg) scale(1.1);
+        color: rgb(238, 175, 124);
+        
+    }
+    50% {
+        transform: rotateZ(180deg) scale(0.9);
+        color: rgb(110, 219, 183);
+        
+    }
+    75% {
+        transform: rotateZ(270deg) scale(1.1);
+        color: rgb(168, 167, 245);
+       
+    }
+    100% {
+        transform: rotateZ(360deg) scale(1);
+        color: rgb(223, 144, 243);
+       
+    }
+}
+.match {
+    margin-top: 50px;
+    width: 51%;
+    height: 50%;
+    border-radius: 25px;
+    animation: rotate 4s infinite ease-in-out;
+    
+    
+}
+.match__cate {
+    position: relative;  
+    
+}
+@keyframes color {
+    0% {
+        background-color: darkred;
+    }
+    25% {
+        background-color: rgb(238, 175, 124);
+    }
+    50% {
+        background-color: rgb(110, 219, 183);
+    }
+    75% {
+        background-color: rgb(168, 167, 245);
+    }
+    100% {
+        background-color: rgb(223, 144, 243);
+    }
+}
+.sports {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: rgb(243, 245, 231);
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid rgb(241, 225, 190);
+    box-shadow: 0px 3px 5px 5px rgb(242, 243, 241);
+    
+    
+
+}
+
+.match__cate :first-child {
+    top: 50px;
+    left: 75px;
+    animation: rotate 4s infinite ease-in-out;
+    
+    text-decoration: none;
+    
+
+}
+.match__cate :nth-child(2){
+    top: 150px;
+    animation: rotate 4s infinite ease-in-out;
+}
+.match__cate :nth-child(3){
+    left: 150px;
+    top: 150px;
+    animation: rotate 4s infinite ease-in-out;
+}
+.match__cate :last-child {
+    top: 250px;
+    left: 75px;
+    animation: rotate 4s infinite ease-in-out;
+}
+
+@keyframes splash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.splashImg{
+    position: absolute;
+    height: 100vh;
+    width: 600px;
+    animation: splash 1.5s ease-in-out forwards;
+}
+
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #no-mobile {
+      display: none;
+    }
+  }
